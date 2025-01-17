@@ -8,7 +8,7 @@ import urllib.request
 console = Console()
 
 # คีย์ที่ใช้ในการเข้าสู่ระบบ
-VALID_KEY = "Razer99"  # สามารถเปลี่ยนเป็นคีย์ที่ต้องการ
+VALID_KEY = "River"  # สามารถเปลี่ยนเป็นคีย์ที่ต้องการ
 
 # ฟังก์ชันสำหรับการตรวจสอบการเข้าสู่ระบบ (Login)
 def login():
@@ -93,7 +93,7 @@ def install_sub_command():
     }
 
     table = Table(title="ติดตั้งคำสั่งรีจอยส์", title_style="bold cyan")
-    table.add_column("RAZER", justify="center", style="bold magenta")
+    table.add_column("River", justify="center", style="bold magenta")
     table.add_column("V0.1", justify="left", style="bold green")
     for key, sub_cmd in sub_commands.items():
         table.add_row(key, sub_cmd["name"])
@@ -115,7 +115,7 @@ def main_menu():
     while True:
         os.system('clear')
 
-        table = Table(title="RAZER SETUP", title_style="bold cyan")
+        table = Table(title="River Setup", title_style="bold cyan")
         table.add_column("RAZER", justify="center", style="bold magenta")
         table.add_column("V0.1", justify="left", style="bold green")
 
